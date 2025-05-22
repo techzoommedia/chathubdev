@@ -77,6 +77,7 @@ export const AuthProvider = ({ children }) => {
       query: {
         userId: userData._id,
       },
+       transports: ['websocket'],
     });
     newSocket.connect();
     setSocket(newSocket);
